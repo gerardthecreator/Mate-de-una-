@@ -1,0 +1,101 @@
+/* responsive.css: Adaptación a dispositivos móviles */
+
+/* Para pantallas más pequeñas (teléfonos móviles) */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .header h1 {
+        font-size: 2.2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .navigation-buttons {
+        flex-direction: column; /* Apila los botones en pantallas pequeñas */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .nav-button {
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px 20px;
+        font-size: 1em;
+        justify-content: center; /* Centra el texto y el icono */
+    }
+
+    .exercise-counter {
+        font-size: 1.1em;
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Apila las tarjetas */
+        gap: 20px;
+    }
+
+    .exercise-card,
+    .canvas-container {
+        flex: none; /* Elimina la flex-grow */
+        width: 100%; /* Ocupa todo el ancho */
+        min-width: unset; /* Reinicia el min-width */
+        padding: 20px;
+    }
+
+    .exercise-card h2 {
+        font-size: 1.5em;
+    }
+
+    .exercise-card h3 {
+        font-size: 1.2em;
+    }
+
+    .step-content {
+        font-size: 1em;
+        max-height: 50vh; /* Ajusta la altura máxima para scroll */
+    }
+
+    .canvas-container {
+        min-height: 300px; /* Reduce la altura mínima del canvas */
+    }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+    .nav-button {
+        font-size: 0.95em;
+        padding: 8px 15px;
+    }
+
+    .exercise-counter {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .exercise-card {
+        padding: 15px;
+    }
+
+    .exercise-card h2 {
+        font-size: 1.3em;
+    }
+
+    .exercise-card h3 {
+        font-size: 1.1em;
+    }
+
+    .step-content {
+        font-size: 0.95em;
+    }
+}
