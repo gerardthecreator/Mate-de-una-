@@ -1,0 +1,13 @@
+/* graficos.css: Estilos específicos para el área del gráfico (canvas) */
+
+.canvas-container {
+    background-color: #fcfcfc; /* Un fondo muy claro para el canvas */
+    border: 1px solid var(--border-color); /* Borde sutil */
+    position: relative; /* Necesario para posicionar el canvas si se usa flexbox */
+}
+
+canvas {
+    /* El tamaño se maneja principalmente con JavaScript para mantener la responsividad */
+    background-color: transparent; /* Fondo transparente, el contenedor maneja el color */
+    display: block; /* Elimina el espacio extra debajo del canvas */
+}
